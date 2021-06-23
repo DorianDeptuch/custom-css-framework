@@ -6,3 +6,281 @@
 @import "display";
 @import "height";
 @import "width";
+@import "flex";
+@import "grid";
+@import "utility";
+@import "colors";
+
+@font-face {
+  font-family: "Norse";
+  src: url(https://www.theodinproject.com/assets/Norse-Bold-0e89cea179e25db6811101e128584a98a5dc95ecd82cdce22fa3d9750d62a2ee.otf)
+    format("otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+html,
+body {
+  text-align: center;
+  font-family: "Open Sans";
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+
+header {
+  nav {
+    height: 7rem;
+    padding: 1rem 2rem;
+
+    .logo-title-container {
+      h2 {
+        font-family: "Norse";
+        text-transform: uppercase;
+        color: $bronze;
+      }
+    }
+
+    .menu-items {
+      .menu-480 {
+        color: $aqua;
+        font-size: 2rem;
+
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+      ul {
+        display: none;
+        color: $font-light;
+        padding-right: 2rem;
+        align-items: center;
+        font-size: 1.5rem;
+
+        li {
+          padding: 0 1rem;
+        }
+
+        @media (min-width: 768px) {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
+
+.start-here {
+  h1 {
+    color: $bronze;
+    font-weight: 300;
+
+    @media (min-width: 576px) {
+      width: 50%;
+    }
+  }
+  p:nth-of-type(1) {
+    font-size: 1.5rem;
+    color: $font-light;
+  }
+  p:nth-of-type(2) {
+    color: $bronze;
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+
+  button {
+    background-color: $aqua;
+  }
+}
+
+.how-it-works {
+  h3 {
+    font-weight: bold;
+  }
+
+  p {
+    color: $font-light;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    li {
+      @media (min-width: 768px) {
+        width: 100%;
+        margin: 1rem;
+      }
+    }
+    div > * {
+      padding: 1rem 0;
+    }
+
+    h4 {
+      font-weight: bold;
+    }
+  }
+}
+
+.learn-everything {
+  background-color: $background-color;
+
+  h3 {
+    font-weight: bold;
+
+    @media (min-width: 576px) {
+      font-size: 2rem;
+    }
+  }
+
+  ul {
+    @media (min-width: 576px) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  }
+  div {
+    background-color: #fff;
+    width: 20rem;
+    height: 11rem;
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 16px 0px;
+
+    img {
+      width: 40%;
+      padding: 1rem;
+    }
+
+    h4 {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  button {
+    background-color: $bronze;
+    margin-top: 2rem;
+  }
+}
+
+.success-stories {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(238, 238, 238));
+
+  @media (min-width: 1200px) {
+    flex-flow: row wrap;
+  }
+
+  h3 {
+    font-weight: bold;
+
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+  }
+  .story {
+    .story-avatar {
+      position: relative;
+      display: none;
+
+      img {
+        position: absolute;
+        top: 1rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+      }
+
+      @media (min-width: 480px) {
+        display: block;
+      }
+    }
+    .story-info {
+      text-align: left;
+      font-size: 1.25rem;
+      padding-left: 2rem;
+
+      .story-name {
+        color: $bronze;
+        padding-bottom: 1rem;
+      }
+      .story-content {
+        color: $font-light;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      width: 50%;
+      padding: 0 2rem 5rem 2rem;
+    }
+  }
+  .more-stories {
+    p {
+      color: $font-light;
+      text-decoration: underline;
+    }
+
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+  }
+  h2 {
+    color: $font-light;
+
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+  }
+  button {
+    background-color: $aqua;
+
+    @media (min-width: 1200px) {
+      width: 20%;
+      margin: 0 auto;
+    }
+  }
+}
+
+footer {
+  padding: 5rem 2rem;
+  .logo-title-container {
+    display: none;
+
+    h2 {
+      font-family: "Norse";
+      text-transform: uppercase;
+      color: $bronze;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  .social-media-links {
+    span {
+      color: $bronze;
+      font-size: 1.5rem;
+    }
+  }
+
+  .about {
+    columns: 2;
+    font-weight: bold;
+    color: $font-light;
+  }
+}

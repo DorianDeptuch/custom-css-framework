@@ -1,0 +1,55 @@
+//Flex
+
+.fdc {
+  display: flex;
+  flex-direction: column;
+}
+
+.fdr {
+  display: flex;
+  flex-direction: row;
+}
+
+.fww {
+  flex-wrap: wrap;
+}
+
+.fwnw {
+  flex-wrap: nowrap;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcfs {
+  justify-content: flex-start;
+}
+
+.jcfe {
+  justify-content: flex-end;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.aic {
+  align-items: center;
+}
+
+.aifs {
+  align-items: flex-start;
+}
+
+.aife {
+  align-items: flex-end;
+}
+
+.ais {
+  align-items: stretch;
+}

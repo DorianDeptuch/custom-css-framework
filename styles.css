@@ -1,0 +1,26 @@
+/* @font-face {
+  font-family: "Norse";
+  src: url(https://www.theodinproject.com/assets/Norse-Bold-0e89cea179e25db6811101e128584a98a5dc95ecd82cdce22fa3d9750d62a2ee.otf)
+    format("otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+nav {
+  height: 7rem;
+  padding: 1rem 2rem;
+  border-bottom: red 1px solid;
+}
+
+.logo-title-container > h2 {
+  font-family: "Norse";
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: rgb(106, 191, 195);
+}
+
+.menu-items > .menu-480 {
+  color: aqua;
+  font-size: 2rem;
+} */
